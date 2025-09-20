@@ -1,2 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 :root {
+  --petrol-green: #008b64;
+  --white: #fff;
+  --navy-blue: #14305b;
+  --orange: #ff5c11;
+  --gray: #6b7280;
+
+  --heading-font: Montserrat;
+  --body-font: Inter;
 }
