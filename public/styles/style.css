@@ -47,6 +47,7 @@ h4 {
     var(--navy-blue),
     var(--petrol-green)
   );
+  position: relative;
 }
 
 .navbar {
@@ -59,20 +60,36 @@ h4 {
   height: 65px;
 }
 
-.navbar__icon {
+.navbar__icon-open {
   stroke: #fff;
   object-fit: contain;
   width: 3rem;
   cursor: pointer;
+  display: none;
 }
 
 .menu {
   list-style: none;
-  display: none;
+  display: flex;
   gap: 3rem;
 }
 
-.navbar_link {
+.menu__link {
   color: #fff;
   text-decoration: none;
+}
+
+@media screen and (width <= 768px) {
+  .navbar__icon-open {
+    display: block;
+  }
+  .navbar div {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 3rem;
+    background-color: #000000;
+    position: absolute;
+    left: 50px;
+  }
 }
