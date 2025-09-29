@@ -37,55 +37,61 @@
           alt="PetroTask logo"
         />
         <nav class="navbar">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#fff"
-            class="navbar__icon-open"
-            title="Open Menu"
-            aria-label="Open Menu"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-            />
-          </svg>
-          <div class="">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="#000"
-              class="navbar__icon-close"
-              title="Close Menu"
-              aria-label="Close Menu"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M6 18 18 6M6 6l12 12"
-              />
-            </svg>
+            <button class="open-menu-btn">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#fff"
+                        class="navbar__icon navbar__icon-open"
+                        title="Open Menu"
+                        aria-label="Open Menu"
+                >
+                    <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                    />
+                </svg>
+            </button>
+            <div class="navbar__mobile">
+                <div class="menu-cont opened">
+                    <button class="close-menu-btn">
+                        <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="#000"
+                                class="navbar__icon navbar__icon-close"
+                                title="Close Menu"
+                                aria-label="Close Menu"
+                        >
+                            <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M6 18 18 6M6 6l12 12"
+                            />
+                        </svg>
+                    </button>
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#">What is PetroTask?</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#funcionalidades">Features</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link" href="#planes">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-            <ul class="menu">
-              <li class="menu__item">
-                <a class="menu__link" href="#">Home</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">What is PetroTask?</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#funcionalidades">Features</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#planes">Pricing</a>
-              </li>
-            </ul>
-          </div>
         </nav>
       </header>
       <main>
