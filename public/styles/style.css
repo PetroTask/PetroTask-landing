@@ -177,10 +177,13 @@ section {
   gap: 3rem;
   padding: 1.8rem;
   text-align: center;
+  align-items: center;
+  width: 100%;
 }
 
 .section-bg-green {
   background-color: var(--petrol-green);
+  color: #fff;
 }
 
 .section__image {
@@ -233,9 +236,6 @@ h1::after {
 /* ABOUT SECTION */
 
 #about {
-  text-align: center;
-  align-items: center;
-  color: #fff;
   gap: 1.5rem;
 }
 
@@ -246,7 +246,6 @@ h1::after {
 /* ORIGIN SECTION */
 
 #origin {
-  align-items: center;
   gap: 1.5rem;
 }
 
