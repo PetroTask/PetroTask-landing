@@ -10,3 +10,69 @@
   --heading-font: Montserrat;
   --body-font: Inter;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+p,
+span,
+li {
+  font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--heading-font);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px;
+  background-image: linear-gradient(
+    to right,
+    var(--navy-blue),
+    var(--petrol-green)
+  );
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__img {
+  width: 215px;
+  height: 65px;
+}
+
+.navbar__icon {
+  stroke: #fff;
+  object-fit: contain;
+  width: 3rem;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  display: none;
+  gap: 3rem;
+}
+
+.navbar_link {
+  color: #fff;
+  text-decoration: none;
+}
