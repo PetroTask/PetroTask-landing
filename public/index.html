@@ -37,90 +37,104 @@
           alt="PetroTask logo"
         />
         <nav class="navbar">
-            <button class="navbar__button open-menu-btn">
+          <button class="navbar__button open-menu-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#fff"
+              class="navbar__icon navbar__icon-open"
+              title="Open Menu"
+              aria-label="Open Menu"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+          <div class="navbar__mobile">
+            <div class="menu-cont opened">
+              <button class="navbar__button close-menu-btn">
                 <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="#fff"
-                        class="navbar__icon navbar__icon-open"
-                        title="Open Menu"
-                        aria-label="Open Menu"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#000"
+                  class="navbar__icon navbar__icon-close"
+                  title="Close Menu"
+                  aria-label="Close Menu"
                 >
-                    <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                    />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18 18 6M6 6l12 12"
+                  />
                 </svg>
-            </button>
-            <div class="navbar__mobile">
-                <div class="menu-cont opened">
-                    <button class="navbar__button close-menu-btn">
-                        <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke-width="1.5"
-                                stroke="#000"
-                                class="navbar__icon navbar__icon-close"
-                                title="Close Menu"
-                                aria-label="Close Menu"
-                        >
-                            <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M6 18 18 6M6 6l12 12"
-                            />
-                        </svg>
-                    </button>
-                    <ul class="menu">
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">Home</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">What is PetroTask?</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#funcionalidades">Features</a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#planes">Pricing</a>
-                        </li>
-                    </ul>
-                </div>
+              </button>
+              <ul class="menu">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Home</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">What is PetroTask?</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#funcionalidades">Features</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#planes">Pricing</a>
+                </li>
+              </ul>
             </div>
+          </div>
         </nav>
       </header>
       <main class="main">
-        <section id="intro">
-            <article class="article__demo">
-                <p>Be one of the first to request this service</p>
-                <button class="button">Request a demo</button>
-            </article>
-            <article class="article__slogan">
-                <div class="article__slogan__container">
-                    <p>Transform the field operation <br> with</p>
-                    <h1>PetroTask</h1>
-                    <p>Plan, assign and monitor tasks <br> in real-time.</p>
-                </div>
-            </article>
+        <section id="intro" class="hero">
+          <article class="article__demo">
+            <p>Be one of the first to request this service</p>
+            <button class="button">Request a demo</button>
+          </article>
+          <article class="article__slogan">
+            <div class="article__slogan__container">
+              <p>
+                Transform the field operation <br />
+                with
+              </p>
+              <h1>PetroTask</h1>
+              <p>
+                Plan, assign and monitor tasks <br />
+                in real-time.
+              </p>
+            </div>
+          </article>
         </section>
-        <section id="que-es" class="section-bg-green">
-            <article>
-                <h2>What is PetroTask?</h2>
-                <p>PetroTask is a digital platform designed to optimize task management and processes in the oil sector. With an intuitive interface and specialized tools, facilitates planning, monitoring and control of operations at all stages of the logistics chain.</p>
-            </article>
-            <img src="../assets/images/logos/PetroTask_Logo.png" alt="PetroTask logo" />
-            
+        <section id="about" class="section-bg-green">
+          <article class="about__article">
+            <h2 class="about__title">What is PetroTask?</h2>
+            <p class="about__definition">
+              PetroTask is a digital platform designed to optimize task
+              management and processes in the oil sector. With an intuitive
+              interface and specialized tools, facilitates planning, monitoring
+              and control of operations at all stages of the logistics chain.
+            </p>
+          </article>
+          <img
+            class="about__logo"
+            src="../assets/images/logos/PetroTask_Logo.png"
+            alt="PetroTask logo"
+          />
         </section>
-        <section id="por-que"></section>
-        <section id="funcionalidades" class="section-bg-green"></section>
-        <section id="beneficios"></section>
-        <section id="planes" class="section-bg-green"></section>
+        <section id="origin"></section>
+        <section id="features" class="section-bg-green"></section>
+        <section id="benefits"></section>
+        <section id="pricing" class="section-bg-green"></section>
         <section id="faq"></section>
-        <section id="contacto" class="section-bg-green"></section>
+        <section id="contact" class="section-bg-green"></section>
       </main>
       <footer class="footer"></footer>
     </div>
