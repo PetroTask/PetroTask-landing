@@ -255,6 +255,29 @@ h1::after {
 
 /* FEATURES SECTION */
 
+.features__article {
+  gap: 1.8rem;
+}
+
+.features__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.feature__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 0.4rem;
+  color: #000;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 10px;
+}
+
 /* PRICING SECTION */
 
 /* FAQ SECTION */
