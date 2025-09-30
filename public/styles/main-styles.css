@@ -64,6 +64,13 @@ article,
   gap: 2rem;
 }
 
+.benefits-section,
+.pricing-section,
+.faq-section,
+.contact-section {
+  flex-direction: column;
+}
+
 /* INTRO SECTION */
 
 .hero__slogan-container p {
