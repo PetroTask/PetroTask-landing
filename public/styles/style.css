@@ -42,7 +42,6 @@ h2 {
 .container {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
   min-width: 320px;
   max-width: 1200px;
   width: 100%;
@@ -523,4 +522,88 @@ h1::after {
 
 .button[type="submit"] {
   font-size: 20px;
+}
+
+/* FOOTER STYLES */
+
+.footer {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 1.5rem;
+  gap: 2rem;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer__section:first-child {
+  gap: 2rem;
+}
+
+.footer__section-logo {
+  filter: brightness(0) invert(1);
+  object-fit: contain;
+  width: 250px;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.footer__social-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.footer__social-logo {
+  width: 40px;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+.footer__social-logo:hover {
+  opacity: 0.5;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 0.8rem;
+}
+
+.footer__list-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+.footer__copy {
+  color: var(--gray);
 }
