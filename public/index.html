@@ -419,7 +419,7 @@
             <details class="faq">
               <summary class="faq_question">3. How are alerts managed?</summary>
               <p class="faq__answer">
-                Supervisors set conditions (for example: delay > X hours,
+                Supervisors set conditions (for example: delay &gt; X hours,
                 out-of-range readings) that trigger alerts and push
                 notifications to relevant users.
               </p>
@@ -455,9 +455,46 @@
         </section>
 
         <section id="contact" class="section-bg-green">
-          <article class="contact__article">
-            <h2 class="contact__title">Contact</h2>
-          </article>
+          <h2 class="contact__title">Contact</h2>
+          <div class="contact__container">
+            <form action="" class="contact__form">
+              <div class="input">
+                <label class="input__label">
+                  Name
+                  <input
+                    name="name"
+                    type="text"
+                    class="input__field"
+                    placeholder="Jhon Doe"
+                  />
+                </label>
+              </div>
+              <div class="input">
+                <label class="input__label">
+                  Email
+                  <input
+                    name="email"
+                    type="text"
+                    class="input__field"
+                    placeholder="jhondoe@gmail.com"
+                  />
+                </label>
+              </div>
+              <div class="input">
+                <label class="input__label">
+                  Message
+                  <textarea
+                    name="message"
+                    class="input__field"
+                    placeholder="Enter your message here"
+                    rows="8"
+                    cols="23"
+                  ></textarea>
+                </label>
+              </div>
+              <button class="button" type="submit">Enviar</button>
+            </form>
+          </div>
         </section>
       </main>
       <footer class="footer"></footer>
