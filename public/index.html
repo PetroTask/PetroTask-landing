@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PetroTask - Optimiza tus Operaciones de Campo</title>
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/global-styles.css" />
+    <link rel="stylesheet" href="./styles/header-styles.css" />
+    <link rel="stylesheet" href="./styles/main-styles.css" />
+    <link rel="stylesheet" href="./styles/footer-styles.css" />
     <link rel="icon" href="favicon.png" sizes="32x32" type="image/png" />
     <meta
       name="description"
@@ -36,7 +39,7 @@
           src="../assets/images/logos/PetroTask_without_bg-w.png"
           alt="PetroTask logo"
         />
-        <nav class="navbar">
+        <nav class="navbar" role="navigation">
           <button class="navbar__button open-menu-btn">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -83,10 +86,10 @@
                   <a class="menu__link" href="#">What is PetroTask?</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#funcionalidades">Features</a>
+                  <a class="menu__link" href="#features">Features</a>
                 </li>
                 <li class="menu__item">
-                  <a class="menu__link" href="#planes">Pricing</a>
+                  <a class="menu__link" href="#pricing">Pricing</a>
                 </li>
               </ul>
             </div>
@@ -94,7 +97,7 @@
         </nav>
       </header>
       <main class="main">
-        <section id="intro" class="hero">
+        <section id="intro" class="hero-section">
           <div class="hero-div hero__demo">
             <p>Be one of the first to request this service</p>
             <button class="button" aria-label="Request a demo of PetroTask">
@@ -116,16 +119,16 @@
           </div>
         </section>
 
-        <section id="about" class="section-bg-green">
-          <article class="about__article">
+        <section id="about" class="about-section section-bg-green">
+          <div class="article about__article">
             <h2 class="about__title">What is PetroTask?</h2>
             <p class="about__definition">
               PetroTask is a digital platform designed to optimize task
               management and processes in the oil sector. With an intuitive
-              interface and specialized tools, facilitates planning, monitoring
+              interface and specialized tools, facilitates planning, monitoring,
               and control of operations at all stages of the logistics chain.
             </p>
-          </article>
+          </div>
           <img
             class="section__image about__logo"
             src="../assets/images/logos/PetroTask_Logo.png"
@@ -133,13 +136,13 @@
           />
         </section>
 
-        <section id="origin">
+        <section id="origin" class="origin-section">
           <img
             class="section__image origin__image"
             src="../assets/images/petrolera.png"
             alt="Image of four oil drilling rigs"
           />
-          <article class="origin__article">
+          <div class="article origin__article">
             <h2 class="origin__title">Why was PetroTask created?</h2>
             <p class="origin__definition">
               The Oil industries face constant challenges: large-scale projects,
@@ -148,11 +151,11 @@
               technological solution that connects teams, centralizes
               information and improves operational efficiency.
             </p>
-          </article>
+          </div>
         </section>
 
-        <section id="features" class="section-bg-green">
-          <article class="features__article">
+        <section id="features" class="features-section section-bg-green">
+          <div class="article features__article">
             <h2 class="features__title">PetroTask Features</h2>
             <div class="features__container">
               <div class="feature">
@@ -212,14 +215,14 @@
                 </p>
               </div>
             </div>
-          </article>
+          </div>
         </section>
 
-        <section id="benefits">
-          <article class="benefits__article">
-            <h2 class="benefits__title">Benefits</h2>
+        <section id="benefits" class="benefits-section">
+          <h2 class="benefits__title">Benefits</h2>
+          <div class="article benefits__article">
             <div class="benefits__container">
-              <div id="supervisor" class="benefit">
+              <article id="supervisor" class="benefit">
                 <div class="benefit__image-container">
                   <img
                     class="benefit__image"
@@ -241,8 +244,8 @@
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div id="technician" class="benefit">
+              </article>
+              <article id="technician" class="benefit">
                 <div class="benefit__image-container">
                   <img
                     class="benefit__image"
@@ -263,8 +266,8 @@
                     </li>
                   </ul>
                 </div>
-              </div>
-              <div id="manager" class="benefit">
+              </article>
+              <article id="manager" class="benefit">
                 <div class="benefit__image-container">
                   <img
                     class="benefit__image"
@@ -284,12 +287,12 @@
                     </li>
                   </ul>
                 </div>
-              </div>
+              </article>
             </div>
-          </article>
+          </div>
         </section>
 
-        <section id="pricing" class="section-bg-green">
+        <section id="pricing" class="pricing-section section-bg-green">
           <h2 class="pricing__title">Pricing</h2>
           <div class="pricing__container">
             <article class="plan plan--basic">
@@ -454,7 +457,7 @@
           </div>
         </section>
 
-        <section id="contact" class="section-bg-green">
+        <section id="contact" class="contact-section section-bg-green">
           <h2 class="contact__title">Contact</h2>
           <div class="contact__container">
             <form action="" class="contact__form">
@@ -492,12 +495,13 @@
                   ></textarea>
                 </label>
               </div>
-              <button class="button" type="submit">Enviar</button>
+              <button class="button" type="submit">Submit</button>
             </form>
           </div>
         </section>
       </main>
-      <footer class="footer">
+
+      <footer class="footer" role="contentinfo">
         <div class="footer__container">
           <div class="footer__section">
             <img
@@ -571,8 +575,12 @@
           <div class="footer__section">
             <h4 class="footer__section-title">Legal</h4>
             <ul class="footer__list">
-              <li class="footer__list-item">Privacy policy</li>
-              <li class="footer__list-item">Terms and conditions</li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Privacy policy</a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link" href="#">Terms and conditions</a>
+              </li>
             </ul>
           </div>
         </div>
