@@ -199,7 +199,8 @@ section {
 }
 
 article,
-.hero-div {
+.hero-div,
+.faq__article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -466,5 +467,28 @@ h1::after {
 }
 
 /* FAQ SECTION */
+
+.faq-section__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.faq {
+  background-color: #f0ededed;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+.faq_question {
+  font-weight: bold;
+}
+
+.faq__answer {
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
 
 /* CONTACT FORM SECTION */
