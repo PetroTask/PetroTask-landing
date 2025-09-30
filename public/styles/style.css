@@ -35,6 +35,10 @@ h4 {
   font-family: var(--heading-font);
 }
 
+h2 {
+  font-size: 1.75rem;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -153,7 +157,6 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
 }
 
 .button {
@@ -177,6 +180,7 @@ section {
   justify-content: space-between;
   gap: 3rem;
   padding: 1.8rem;
+  padding-bottom: 3rem;
   text-align: center;
   align-items: center;
   width: 100%;
@@ -304,6 +308,10 @@ h1::after {
   padding: 15px;
   gap: 1rem;
   width: 243px;
+}
+
+.benefit__title {
+  font-size: 22px;
 }
 
 .benefit__image-container {
