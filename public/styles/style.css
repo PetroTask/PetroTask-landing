@@ -427,6 +427,7 @@ h1::after {
 
 .plan__description {
   font-size: 0.875rem;
+  line-height: 1.15rem;
 }
 
 .plan__features {
