@@ -167,6 +167,11 @@ button {
   font-weight: bold;
 }
 
+.button:hover {
+  background-color: #f87e46;
+  transition: 0.1s all ease-in-out;
+}
+
 section {
   display: flex;
   justify-content: space-between;
@@ -272,7 +277,7 @@ h1::after {
   background-color: #fff;
   padding: 0.5rem;
   border-radius: 0.625rem;
-  width: 34.375rem;
+  width: 100%;
 }
 
 /* BENEFITS SECTION */
