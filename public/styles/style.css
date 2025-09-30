@@ -6,6 +6,7 @@
   --navy-blue: #14305b;
   --orange: #ff5c11;
   --gray: #6b7280;
+  --red: #ff7976;
 
   --heading-font: Montserrat, sans-serif;
   --body-font: Inter, sans-serif;
@@ -17,10 +18,13 @@
   box-sizing: border-box;
 }
 
-a,
-p,
-span,
-li {
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  max-width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
   font-family: var(--body-font);
 }
 
@@ -29,15 +33,6 @@ h2,
 h3,
 h4 {
   font-family: var(--heading-font);
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-width: 320px;
-  max-width: 100vw;
-  min-height: 100vh;
-  margin: 0 auto;
 }
 
 .container {
@@ -169,6 +164,7 @@ button {
   border-radius: 5px;
   text-align: center;
   width: fit-content;
+  font-weight: bold;
 }
 
 section {
@@ -359,6 +355,82 @@ h1::after {
 }
 
 /* PRICING SECTION */
+
+.pricing__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #000;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 1.3rem;
+  width: 16.75rem;
+}
+
+.plan__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  gap: 0.6rem;
+}
+
+.plan__description {
+  color: var(--gray);
+}
+
+.plan__price {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.plan__cycle {
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.plan__features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  list-style: none;
+  list-style-position: inside;
+}
+
+.plan__feature::marker {
+  content: "✔";
+}
+
+.plan--recommended {
+  position: relative;
+  order: 0;
+}
+.plan--basic {
+  order: 1;
+}
+.plan--corporate {
+  order: 2;
+}
+
+.plan__badge {
+  position: absolute;
+  background-color: #fff;
+  color: var(--red);
+  font-weight: bold;
+  top: -18px;
+  padding-inline: 10px;
+  padding-top: 2px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
 
 /* FAQ SECTION */
 
