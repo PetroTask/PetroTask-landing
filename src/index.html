@@ -40,7 +40,6 @@
           alt="PetroTask logo"
         />
         <nav class="navbar" role="navigation">
-          <!-- Botón hamburguesa (solo visible en mobile) -->
           <button
             class="navbar__toggle"
             aria-label="Toggle menu"
@@ -52,7 +51,7 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="navbar__icon"
+              class="navbar__icon icon-open"
             >
               <path
                 stroke-linecap="round"
@@ -60,21 +59,35 @@
                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
               />
             </svg>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="navbar__icon icon-close"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
           </button>
 
-          <!-- Menú de navegación -->
           <ul class="navbar__menu">
             <li class="navbar__item">
               <a class="navbar__link" href="#">Home</a>
             </li>
             <li class="navbar__item">
-              <a class="navbar__link" href="#que-es">What is PetroTask?</a>
+              <a class="navbar__link" href="#about">What is PetroTask?</a>
             </li>
             <li class="navbar__item">
-              <a class="navbar__link" href="#funcionalidades">Features</a>
+              <a class="navbar__link" href="#features">Features</a>
             </li>
             <li class="navbar__item">
-              <a class="navbar__link" href="#planes">Pricing</a>
+              <a class="navbar__link" href="#pricing">Pricing</a>
             </li>
           </ul>
         </nav>
