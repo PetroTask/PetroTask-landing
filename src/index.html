@@ -40,16 +40,19 @@
           alt="PetroTask logo"
         />
         <nav class="navbar" role="navigation">
-          <button class="navbar__button open-menu-btn">
+          <!-- Botón hamburguesa (solo visible en mobile) -->
+          <button
+            class="navbar__toggle"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
               stroke-width="1.5"
-              stroke="#fff"
-              class="navbar__icon navbar__icon-open"
-              title="Open Menu"
-              aria-label="Open Menu"
+              stroke="currentColor"
+              class="navbar__icon"
             >
               <path
                 stroke-linecap="round"
@@ -58,42 +61,22 @@
               />
             </svg>
           </button>
-          <div class="navbar__mobile">
-            <div class="menu-cont opened">
-              <button class="navbar__button close-menu-btn">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="#000"
-                  class="navbar__icon navbar__icon-close"
-                  title="Close Menu"
-                  aria-label="Close Menu"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18 18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
-              <ul class="menu">
-                <li class="menu__item">
-                  <a class="menu__link" href="#">Home</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#">What is PetroTask?</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#features">Features</a>
-                </li>
-                <li class="menu__item">
-                  <a class="menu__link" href="#pricing">Pricing</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+
+          <!-- Menú de navegación -->
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a class="navbar__link" href="#">Home</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#que-es">What is PetroTask?</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#funcionalidades">Features</a>
+            </li>
+            <li class="navbar__item">
+              <a class="navbar__link" href="#planes">Pricing</a>
+            </li>
+          </ul>
         </nav>
       </header>
 
