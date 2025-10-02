@@ -1,0 +1,135 @@
+/* HEADER STYLES */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  background-image: linear-gradient(
+    to right,
+    var(--navy-blue),
+    var(--petrol-green)
+  );
+}
+
+.header__img {
+  width: 215px;
+  height: 65px;
+  object-fit: contain;
+}
+
+/* NAVBAR STYLES */
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__toggle {
+  display: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__icon {
+  width: 32px;
+  height: 32px;
+  stroke: #fff;
+}
+
+.navbar__menu {
+  list-style: none;
+  display: flex;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__item {
+  margin: 0;
+}
+
+.navbar__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar__link:hover {
+  opacity: 0.8;
+  color: var(--orange);
+}
+
+/* RESPONSIVE - MOBILE */
+
+@media screen and (max-width: 768px) {
+  .navbar__toggle {
+    display: flex;
+    position: relative;
+    z-index: 1001;
+  }
+
+  .navbar__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 280px;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 5rem 2rem 2rem;
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .navbar__menu.active {
+    transform: translateX(0);
+  }
+
+  .navbar__item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__link {
+    display: block;
+    padding: 0.75rem 1rem;
+    font-size: 1.125rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+  .navbar__link:hover {
+    background-color: rgba(255, 92, 17, 0.1);
+  }
+
+  .header__img {
+    width: 180px;
+    height: 55px;
+  }
+
+  /* Overlay cuando el menú está abierto */
+  body:has(.navbar__menu.active)::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+}
