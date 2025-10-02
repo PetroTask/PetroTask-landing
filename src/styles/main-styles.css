@@ -100,16 +100,6 @@ h1::after {
   background-color: #000;
 }
 
-@media screen and (width <= 768px) {
-  section {
-    flex-direction: column;
-  }
-
-  .hero-section {
-    flex-direction: column-reverse;
-  }
-}
-
 /* ABOUT SECTION */
 
 #about {
@@ -165,7 +155,7 @@ h1::after {
 
 .benefits__container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 2rem;
@@ -249,7 +239,7 @@ h1::after {
 
 .pricing__container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 2rem;
@@ -258,12 +248,15 @@ h1::after {
 .plan {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  justify-content: start;
+  gap: 1.2rem;
   color: #000;
   background-color: #fff;
   border-radius: 15px;
-  padding: 1.3rem;
+  padding: 1.5rem;
+  padding-bottom: 1.8rem;
   width: 16.75rem;
+  min-height: 34rem;
 }
 
 .plan__content {
@@ -311,13 +304,6 @@ h1::after {
 
 .plan--recommended {
   position: relative;
-  order: 0;
-}
-.plan--basic {
-  order: 1;
-}
-.plan--corporate {
-  order: 2;
 }
 
 .plan__badge {
@@ -332,29 +318,68 @@ h1::after {
   border-top-right-radius: 8px;
 }
 
+.plan__button {
+  margin-top: auto;
+}
+
 /* FAQ SECTION */
 
 .faq-section__container {
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1000px;
+  align-items: start;
 }
 
 .faq {
   background-color: #f0ededed;
-  padding: 10px;
+  padding: 1rem;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 8px;
   border: 1px solid #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq:hover {
+  background-color: #e5e5e5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq[open] {
+  background-color: #fff;
 }
 
 .faq_question {
   font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.faq_question::-webkit-details-marker {
+  display: none;
+}
+
+.faq_question::after {
+  content: "+";
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.faq[open] .faq_question::after {
+  content: "−";
+  transform: rotate(180deg);
 }
 
 .faq__answer {
-  margin-top: 0.5rem;
-  line-height: 1.5;
+  margin-top: 0.75rem;
+  line-height: 1.6;
+  text-align: left;
+  padding-left: 0.5rem;
 }
 
 /* CONTACT FORM SECTION */
@@ -393,4 +418,37 @@ h1::after {
 
 .button[type="submit"] {
   font-size: 20px;
+}
+
+@media screen and (width <= 768px) {
+  section {
+    flex-direction: column;
+  }
+
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+
+  .benefits__container,
+  .pricing__container {
+    flex-direction: column;
+  }
+
+  .plan--recommended {
+    position: relative;
+    order: 0;
+  }
+
+  .plan--basic {
+    order: 1;
+  }
+
+  .plan--corporate {
+    order: 2;
+  }
+
+  .faq-section__container {
+    display: flex;
+    flex-direction: column;
+  }
 }
