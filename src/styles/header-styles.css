@@ -44,6 +44,14 @@
   stroke: #fff;
 }
 
+.icon-open {
+  display: block;
+}
+
+.icon-close {
+  display: none;
+}
+
 .navbar__menu {
   list-style: none;
   display: flex;
