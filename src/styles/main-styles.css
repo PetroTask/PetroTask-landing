@@ -1,5 +1,13 @@
 /* MAIN STYLES */
 
+h2 {
+  font-size: 48px;
+}
+
+p {
+  font-size: 20px;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -17,6 +25,7 @@
   width: fit-content;
   font-weight: bold;
   font-size: 0.9rem;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -27,7 +36,6 @@
 section {
   display: flex;
   justify-content: space-between;
-  /* gap: 3rem; */
   padding: 1.8rem;
   padding-bottom: 3rem;
   text-align: center;
@@ -73,8 +81,19 @@ article,
 
 /* INTRO SECTION */
 
+#intro {
+  padding-block: 6rem;
+  padding-inline: 10rem;
+}
+
+.hero__demo p,
+.hero__demo .button {
+  font-size: 25px;
+}
+
 .hero__slogan-container p {
   font-weight: bold;
+  font-size: 25px;
 }
 
 .hero__slogan-container {
@@ -92,7 +111,7 @@ h1 {
 h1::after {
   content: "";
   position: absolute;
-  width: 110%;
+  width: 90%;
   height: 2px;
   bottom: 5px;
   left: 50%;
@@ -103,41 +122,72 @@ h1::after {
 /* ABOUT SECTION */
 
 #about {
-  gap: 1.5rem;
+  justify-content: space-between;
+  padding-inline: 8rem;
+  gap: 12rem;
+}
+
+.about__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-inline: 5rem;
 }
 
 .about__definition {
   line-height: 1.7;
 }
 
+.section__image {
+  width: 500px;
+  object-fit: cover;
+}
+
 /* ORIGIN SECTION */
 
 #origin {
-  gap: 1.5rem;
+  justify-content: space-between;
+  padding-inline: 8rem;
+  padding-block: 6rem;
+  gap: 12rem;
 }
 
 .origin__definition {
   line-height: 1.5;
+  padding-inline: 5rem;
 }
 
 /* FEATURES SECTION */
+
+.features-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
 
 .features__article {
   gap: 1.8rem;
 }
 
 .features__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+}
+
+.feature:nth-child(7) {
+  grid-column: 2 / 3;
 }
 
 .feature {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   gap: 0.4rem;
   color: #000;
   background-color: #fff;
@@ -267,8 +317,11 @@ h1::after {
   gap: 0.6rem;
 }
 
-.plan__description {
+.plan__description,
+.plan__description p {
   color: var(--gray);
+  font-size: 0.875rem;
+  line-height: 1.15rem;
 }
 
 .plan__price {
@@ -283,11 +336,6 @@ h1::after {
 
 .plan__title {
   font-size: 1.25rem;
-}
-
-.plan__description {
-  font-size: 0.875rem;
-  line-height: 1.15rem;
 }
 
 .plan__features {
@@ -450,5 +498,16 @@ h1::after {
   .faq-section__container {
     display: flex;
     flex-direction: column;
+  }
+
+  .features__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1::after {
+    width: 110%;
   }
 }
